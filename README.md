@@ -94,6 +94,12 @@ mapping-documents/Data Model and Mapping Document.xlsx
 
 ---
 
+## Conclusion
+This project demonstrates practical ETL development skills including pipeline orchestration, incremental data loading, and dimensional modeling using SSIS.  
+It reflects hands-on experience aligned with real-world BI and data warehousing scenarios and complements analytical reporting built using SQL and Power BI.
+
+---
+
 ## 📂 Repository Structure
 ```text
 ssis-etl-data-warehouse/
@@ -110,9 +116,7 @@ ssis-etl-data-warehouse/
 │   └── Data Model and Mapping Document.xlsx
 
 
----
 
-## Conclusion
-This project demonstrates practical ETL development skills including pipeline orchestration, incremental data loading, and dimensional modeling using SSIS.  
-It reflects hands-on experience aligned with real-world BI and data warehousing scenarios and complements analytical reporting built using SQL and Power BI.
+
+
 
