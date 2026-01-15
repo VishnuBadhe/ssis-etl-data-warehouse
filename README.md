@@ -4,7 +4,7 @@
 This project demonstrates an end-to-end ETL implementation using SQL Server Integration Services (SSIS) to load data from source systems into a structured data warehouse.  
 The solution follows industry-standard ETL practices including staging layers, incremental loading logic, and dimensional modeling.
 
-The project is designed to reflect real-world data warehousing workflows commonly used in BI and analytics environments.
+The project is designed to reflect real-world data warehousing workflows commonly used in Business Intelligence (BI) and analytics environments.
 
 ---
 
@@ -12,8 +12,8 @@ The project is designed to reflect real-world data warehousing workflows commonl
 **Source Systems → Staging Database → Data Warehouse**
 
 - Source data extracted from the Northwind relational database and flat files  
-- Intermediate staging layer used for data cleansing and transformation  
-- Final data loaded into dimension and fact tables in the data warehouse
+- Intermediate staging layer used for data cleansing, validation, and transformation  
+- Final data loaded into dimension and fact tables in the data warehouse  
 
 ---
 
@@ -33,7 +33,7 @@ The project is designed to reflect real-world data warehousing workflows commonl
 - Data validation and transformation logic  
 - Source-to-target mapping documentation  
 
-> **Note:** Tables were created directly in SSMS, and incremental logic was implemented using Conditional Split transformations.
+> **Note:** Tables were created directly in SSMS, and incremental load logic was implemented using Conditional Split transformations.
 
 ---
 
@@ -44,7 +44,7 @@ The project is designed to reflect real-world data warehousing workflows commonl
 
 **Insight:**
 - Orchestrates multiple Data Flow Tasks for staging, dimension, and fact table loads.
-- Ensures structured execution of the ETL pipeline.
+- Ensures structured and sequential execution of the ETL pipeline.
 
 ---
 
@@ -72,7 +72,7 @@ The project is designed to reflect real-world data warehousing workflows commonl
 
 **Insight:**
 - Populates fact tables by integrating data from staging and dimension tables.
-- Applies business logic and maintains referential integrity using lookups.
+- Applies business logic and maintains referential integrity using lookup transformations.
 
 ---
 
@@ -82,17 +82,18 @@ The project is designed to reflect real-world data warehousing workflows commonl
 
 **Insight:**
 - Implements incremental loading by separating new and existing records.
-- Ensures efficient data refresh without full reloads.
+- Ensures efficient data refresh without performing full reloads.
 
 ---
 
 ## Data Model & Mapping
-Source-to-target mappings and data model documentation are provided to ensure traceability and clarity of transformations.
+Source-to-target mappings and data model documentation are provided to ensure traceability, transparency, and clarity of all transformations applied during the ETL process.
 
-📂 Location:
+📂 **Location:**  
+mapping-documents/Data Model and Mapping Document.xlsx
 
 ---
 
 ## Conclusion
-This project demonstrates practical ETL development skills including pipeline orchestration, incremental loading, and dimensional modeling using SSIS.  
-It reflects hands-on experience aligned with real-world BI and data warehousing scenarios.
+This project demonstrates practical ETL development skills including pipeline orchestration, incremental data loading, and dimensional modeling using SSIS.  
+It reflects hands-on experience aligned with real-world BI and data warehousing scenarios and complements analytical reporting built using SQL and Power BI.
