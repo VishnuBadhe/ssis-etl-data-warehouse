@@ -90,7 +90,7 @@ The project is designed to reflect real-world data warehousing workflows commonl
 Source-to-target mappings and data model documentation are provided to ensure traceability, transparency, and clarity of all transformations applied during the ETL process.
 
 📂 **Location:**  
-mapping-documents/Data Model and Mapping Document.xlsx
+mapping-documents/data_model_and_mapping_document.xlsx  
 
 ---
 
