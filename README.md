@@ -1,24 +1,98 @@
 # Data Warehouse & ETL Implementation using SSIS
 
-## Overview
-End-to-end ETL implementation using SSIS to load data from flat files and SQL sources into a data warehouse.
+## Project Overview
+This project demonstrates an end-to-end ETL implementation using SQL Server Integration Services (SSIS) to load data from source systems into a structured data warehouse.  
+The solution follows industry-standard ETL practices including staging layers, incremental loading logic, and dimensional modeling.
 
-## Architecture
-Source Systems → Staging Layer → Data Warehouse
+The project is designed to reflect real-world data warehousing workflows commonly used in BI and analytics environments.
+
+---
+
+## Architecture Overview
+**Source Systems → Staging Database → Data Warehouse**
+
+- Source data extracted from the Northwind relational database and flat files  
+- Intermediate staging layer used for data cleansing and transformation  
+- Final data loaded into dimension and fact tables in the data warehouse
+
+---
 
 ## Tools & Technologies
-- SQL Server
-- SSIS
-- ETL
-- Data Warehousing
+- SQL Server  
+- SQL Server Integration Services (SSIS)  
+- SQL Server Management Studio (SSMS)  
+- ETL & Data Warehousing Concepts  
+
+---
 
 ## Key Concepts Implemented
-- Data extraction and transformation
-- Lookups and validations
-- Error handling
-- Fact and dimension tables
+- Staging layer design for controlled data processing  
+- Dimension and fact table loading  
+- Incremental load logic using Conditional Split  
+- Lookup transformations for surrogate key mapping  
+- Data validation and transformation logic  
+- Source-to-target mapping documentation  
 
-## Deliverables
-- ETL workflows
-- Source-to-target mapping
-- Data warehouse schema
+> **Note:** Tables were created directly in SSMS, and incremental logic was implemented using Conditional Split transformations.
+
+---
+
+## ETL Workflow Documentation
+
+### 1️⃣ Control Flow Overview
+![Control Flow](screenshots/01_control_flow.png)
+
+**Insight:**
+- Orchestrates multiple Data Flow Tasks for staging, dimension, and fact table loads.
+- Ensures structured execution of the ETL pipeline.
+
+---
+
+### 2️⃣ Staging Data Load
+![Staging Data Flow](screenshots/02_staging_dft.png)
+
+**Insight:**
+- Extracts data from source systems and loads it into the staging database.
+- Provides an isolated layer for cleansing and transformation before warehouse loading.
+
+---
+
+### 3️⃣ Dimension Table Load
+![Dimension Data Flow](screenshots/03_dimension_dft.png)
+
+**Insight:**
+- Loads dimension tables using lookup-based logic.
+- Handles new and existing records through incremental load design.
+
+---
+
+### 4️⃣ Fact Table Load
+![Fact Data Flow Overview](screenshots/04a_fact_dft_overview.png)
+![Fact Data Flow Details](screenshots/04b_fact_dft_details.png)
+
+**Insight:**
+- Populates fact tables by integrating data from staging and dimension tables.
+- Applies business logic and maintains referential integrity using lookups.
+
+---
+
+### 5️⃣ Incremental Load Logic (Conditional Split)
+![Conditional Split Flow](screenshots/05a_conditional_split_flow.png)
+![Conditional Split Logic](screenshots/05b_conditional_split_logic.png)
+
+**Insight:**
+- Implements incremental loading by separating new and existing records.
+- Ensures efficient data refresh without full reloads.
+
+---
+
+## Data Model & Mapping
+Source-to-target mappings and data model documentation are provided to ensure traceability and clarity of transformations.
+
+📂 Location:
+
+---
+
+## Conclusion
+This project demonstrates practical ETL development skills including pipeline orchestration, incremental loading, and dimensional modeling using SSIS.  
+It reflects hands-on experience aligned with real-world BI and data warehousing scenarios.
