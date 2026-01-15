@@ -94,6 +94,25 @@ mapping-documents/Data Model and Mapping Document.xlsx
 
 ---
 
+## Repository Structure
+
+```text
+ssis-etl-data-warehouse/
+├── README.md
+├── screenshots/
+│   ├── 01_control_flow.png
+│   ├── 02_staging_dft.png
+│   ├── 03_dimension_dft.png
+│   ├── 04a_fact_dft_overview.png
+│   ├── 04b_fact_dft_details.png
+│   ├── 05a_conditional_split_flow.png
+│   └── 05b_conditional_split_logic.png
+├── mapping-documents/
+│   └── Data Model and Mapping Document.xlsx
+
+
+---
+
 ## Conclusion
 This project demonstrates practical ETL development skills including pipeline orchestration, incremental data loading, and dimensional modeling using SSIS.  
 It reflects hands-on experience aligned with real-world BI and data warehousing scenarios and complements analytical reporting built using SQL and Power BI.
