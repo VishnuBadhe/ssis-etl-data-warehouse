@@ -113,7 +113,8 @@ ssis-etl-data-warehouse/
 │   ├── 05a_conditional_split_flow.png
 │   └── 05b_conditional_split_logic.png
 ├── mapping-documents/
-│   └── Data Model and Mapping Document.xlsx
+│   └── data_model_and_mapping_document.xlsx
+
 
 
 
